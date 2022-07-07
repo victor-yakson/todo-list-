@@ -6,7 +6,7 @@ const mongoose = require("mongoose");
 const _ = require("lodash");
 
 const app = express();
-
+mongoose.connect("mongodb://localhost:27017/blogDB")
 app.set('view engine', 'ejs');
 
 app.use(bodyParser.urlencoded({extended: true}));
